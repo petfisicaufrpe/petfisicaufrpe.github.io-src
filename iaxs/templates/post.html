@@ -1,0 +1,32 @@
+{% extends "layout/base.html" %}
+<!-- Title -->
+{% block title %}
+	{{ SITENAME }} | Início
+{% endblock %}
+<!-- EndTitle -->
+
+<!-- Head -->
+{% block head %}
+	{{ super() }}
+{% endblock %}
+<!-- EndHead -->
+
+<!-- Header -->
+{% block header %}
+	<h1>
+		{{ article.title }}
+	</h1>
+	<h3>
+		{{ article.subtitle }}
+	</h3>
+	<p>
+		{{ article.summary }}
+	</p>	
+{% endblock%}
+<!-- EndHeader -->
+
+<!-- Content -->
+{% block content %}
+	{{ article.content }}
+{% endblock %}
+<!-- EndContent -->

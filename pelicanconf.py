@@ -7,10 +7,19 @@ SITENAME = 'PET-Física UFRPE'
 SITEURL = ''
 
 PATH = 'content'
+ARTICLE_PATHS = ['posts']
+STATIC_PATHS = ['images','posts','pages']
+
+ARTICLE_URL = 'posts/{lang}/{date:%Y}-{date:%b}-{date:%d}-{slug}'
+ARTICLE_SAVE_AS = 'posts/{lang}/{date:%Y}-{date:%b}-{date:%d}-{slug}.html'
+
+PAGE_URL = 'pages/{slug}'
+PAGE_SAVE_AS = 'pages/{lang}/{slug}.html'
+
+THEME = "iaxs"
 
 TIMEZONE = 'America/Recife'
-
-DEFAULT_LANG = 'pt'
+DEFAULT_LANG = 'pt-br'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -20,14 +29,16 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (
+	('Pelican', 'http://getpelican.com/'),
+	('Python.org', 'http://python.org/'),
+	('Jinja2', 'http://jinja.pocoo.org/'),
+)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+	('Facebook', 'https://www.facebook.com/profile.php?id=100005313284736&fref=ts'),
+)
 
 DEFAULT_PAGINATION = 10
 

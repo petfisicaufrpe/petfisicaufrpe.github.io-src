@@ -1,10 +1,13 @@
----
-layout: post
-title:  "Um pouco de latex"
-author: "Iury Xavier"
-date:   2016-07-29
-categories: latex
----
+Template: post
+Authors: Iury Xavier
+Title: Um pouco de latex
+Subtitle: saiba mais sobre latex
+Summary: Muito mais sobre latex para seus trabalhos científicos
+Date: 2016-07-29 15:18
+Modified: 2016-08-04 19:30
+Category: latex
+Tags: latex
+Lang:pt-br
 
 # Latex em MarkDown com MathJax #
 

@@ -1,0 +1,32 @@
+{% extends "layout/base.html" %}
+<!-- Title -->
+{% block title %}
+	{{ SITENAME }} | Início
+{% endblock %}
+<!-- EndTitle -->
+
+<!-- Head -->
+{% block head %}
+	{{ super() }}
+{% endblock %}
+<!-- EndHead -->
+
+<!-- Header -->
+{% block header %}
+	<h1>Seja bem vindo <small>explore a nossa página</small></h1>
+	<h3>Um pouco <a class="iaxs-link" href="#">sobre nós</a></h3>
+	<p>Saiba mais sobre os nossos projetos</p>	
+{% endblock%}
+<!-- EndHeader -->
+
+<!-- Content -->
+{% block content %}
+{% if pages %}
+	{% for page in pages %}
+		{% if page.url == output_file %}
+			{{ page.content }}
+		{% endif %}
+	{% endfor %}
+{% endif %}
+{% endblock %}
+<!-- EndContent -->

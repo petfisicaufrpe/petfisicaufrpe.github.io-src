@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Head -->
+<head>
+{% block head %}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+<!-- Title -->
+	<title>{% block title %}{% endblock %}</title>
+<!-- EndTitle -->
+<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap3/bootstrap.min.css">
+<!-- EndBootstrap CSS -->
+<!-- Font-Awesome CSS -->
+	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome/font-awesome.min.css">
+<!-- EndFont-Awesome CSS -->
+<!-- Style [iaxs] Css -->
+	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/iaxs/iaxs.css">
+<!-- EndStyle [iaxs] Css -->
+<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="{{ SITEURL }}/theme/favicon/favicon.ico">
+	<link rel="icon" href="{{ SITEURL }}/theme/favicon/favicon.ico" type="image/x-icon">
+<!-- EndFavicon -->
+{% endblock %}
+</head>
+<!-- EndHead -->
+<!-- Body -->
+<body>
+<!-- Navbar -->
+	<nav class="navbar navbar-default iaxs-navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-left" href="/"><img src="{{ SITEURL }}/theme/img/logo.png" height="55px" width="55px"></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<i class="fa fa-bars iaxs-bars fa-w" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right iaxs-navbar-nav">
+					<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Início</a></li>
+					<li><a href="#"><i class="fa fa-file-o" aria-hidden="true"></i> Blog</a></li>
+					<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contato</a></li>
+					<li><a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Propostas</a></li>
+					<li><a href="#"><i class="fa fa-id-card-o" aria-hidden="true"></i> Participantes</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<!-- EndNavbar -->
+<!-- Header <-->
+	<div class="container-fluid iaxs-header text-center">
+		{% block header %}
+		{% endblock %}
+	</div>
+<!-- EndHeader -->
+<!-- Content -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				{% block content %}
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+<!-- EndContent -->
+<!-- Footer -->
+	<div class="container-fluid text-center iaxs-footer">
+	  <p>&copy; 2017 PET Física-UFRPE | feito por <a class="iaxs-link"href="https://iuryxavier.github.io">Iury Xavier</a></p>
+	</div>
+<!-- EndFooter -->
+<!-- JQuery -->
+	<script src="{{ SITEURL }}/theme/js/jquery/jquery-3.1.1.min.js"></script>
+<!-- EndJQuery -->
+<!-- Tether -->
+	<script src="{{ SITEURL }}/theme/js/tether/tether.min.js"></script>
+<!-- EndTether-->
+<!-- Bootstrap JS -->
+	<script src="{{ SITEURL }}/theme/js/bootstrap3/bootstrap.min.js"></script>
+<!-- EndBootstrap JS -->
+</body>
+<!-- EndBody -->
+</html>

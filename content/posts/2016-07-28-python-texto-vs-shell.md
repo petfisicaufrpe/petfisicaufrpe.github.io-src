@@ -1,10 +1,13 @@
----
-layout: post
-title:  "Python texto vs shell"
-author: "Iury Xavier"
-date:   2016-07-28
-categories: python
----
+Template: post
+Authors: Iury Xavier
+Title: Python texto vs shell
+Subtitle: saiba mais sobre latex
+Summary: Sobre python para suas pesquisas
+Date: 2016-07-28 15:18
+Modified: 2016-08-04 19:34
+Category: python
+Tags: python
+Lang:pt-br
 
 # Markdown e Trinket.io 
 

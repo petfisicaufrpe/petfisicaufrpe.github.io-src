@@ -1,9 +1,8 @@
----
-layout: page
-title: "Propostas"
-description: "Seguimos uma certa regra"
-permalink: /propostas/
----
+Template: page
+Title: Propostas
+Subtitle: Seguimos uma certa regra
+Slug: propostas
+Lang: pt-br
 
 A constituição de um grupo de alunos vinculado a um curso de graduação para desenvolver ações de ensino, pesquisa e extensão sob a orientação de um professor tutor visa oportunizar aos estudantes participantes a possibilidade de ampliar a gama de experiências em sua formação acadêmica e cidadã. Assim o programa objetiva complementar a perspectiva convencional de educação escolar baseada, em geral, em um conjunto qualitativamente limitado de constituintes curriculares.
 

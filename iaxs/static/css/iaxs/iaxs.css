@@ -1,0 +1,85 @@
+h1 small{
+	color: #A5E4BB;
+}
+
+.iaxs-bars {
+	font-size: 18px;
+}
+
+.iaxs-header {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background: #1C0A4E;
+	background: -webkit-linear-gradient(120deg, #A5E4BB, #1C0A4E);
+	background: -o-linear-gradient(120deg, #A5E4BB, #1C0A4E);
+	background: -moz-linear-gradient(120deg, #A5E4BB, #1C0A4E);
+	background: linear-gradient(120deg, #A5E4BB, #1C0A4E);
+}
+
+.iaxs-link {
+	color: #1C0A4E;
+}
+.iaxs-link:hover{
+	text-decoration: none;
+	color: #A5E4BB;
+}
+
+.iaxs-breadcrumb {
+	padding: 0.75rem 1rem;
+	margin-bottom: 1rem;
+	list-style: none;
+	background-color: #eceeef;
+	border-radius: 0rem;
+}
+
+.iaxs-breadcrumb::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.iaxs-breadcrumb-item {
+	float: left;
+}
+
+.iaxs-breadcrumb-item + .iaxs-breadcrumb-item::before {
+	display: inline-block;
+	padding-right: 0.9rem;
+	padding-left: 0.9rem;
+	color: #818a91;
+	content: "/";
+}
+
+.iaxs-breadcrumb-item + .iaxs-breadcrumb-item:hover::before {
+	text-decoration: underline;
+}
+
+.iaxs-breadcrumb-item + .iaxs-breadcrumb-item:hover::before {
+	text-decoration: none;
+}
+
+.iaxs-breadcrumb-item.active {
+	color: #818a91;
+}
+
+.iaxs-navbar {
+	padding-top: 10px;
+	padding-bottom:10px;
+	border: 2px;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size: 15px;
+	letter-spacing: 3px;
+	background: #eceeef;
+	background-color: #eceeef;
+}
+
+.iaxs-navbar-nav  li a:hover {
+	color: #A5E4BB !important;
+}
+
+.iaxs-footer {
+	padding-top: 30px;
+	padding-bottom:30px;
+	background: #eceeef;
+}
