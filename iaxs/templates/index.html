@@ -14,7 +14,7 @@
 <!-- Header -->
 {% block header %}
 	<h1>Seja bem vindo <small>explore a nossa página</small></h1>
-	<h3>Um pouco <a class="iaxs-link" href="#">sobre nós</a></h3>
+	<h3>Um pouco <a class="iaxs-link" href="{{ SITEURL }}/pages/pt-br/sobre-nos.html">sobre nós</a></h3>
 	<p>Saiba mais sobre os nossos projetos</p>	
 {% endblock%}
 <!-- EndHeader -->
@@ -33,5 +33,37 @@
 	<h2>
 		Universidade Federal Rural de Pernambuco (UFRPE)
 	</h2>
+	<br />
 {% endblock %}
 <!-- EndContent -->
+
+<!-- Add Google Maps -->
+{% block maps %}
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+var myCenter = new google.maps.LatLng(-8.015992, -34.951377);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:17,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+{% endblock %}

@@ -38,11 +38,10 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right iaxs-navbar-nav">
-					<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Início</a></li>
-					<li><a href="#"><i class="fa fa-file-o" aria-hidden="true"></i> Blog</a></li>
-					<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contato</a></li>
-					<li><a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Propostas</a></li>
-					<li><a href="#"><i class="fa fa-id-card-o" aria-hidden="true"></i> Participantes</a></li>
+					<li><a href="{{ SITEURL }}"><i class="fa fa-home" aria-hidden="true"></i> Início</a></li>
+					{% for page in pages %}
+					<li><a href="{{ SITEURL }}{{ page.url }}">{{ page.icon }} {{ page.title }}</a></li>
+					{% endfor %}
 				</ul>
 			</div>
 		</div>
@@ -64,6 +63,10 @@
 		</div>
 	</div>
 <!-- EndContent -->
+<!-- Google Maps -->
+	{% block maps %}
+	{% endblock %}
+<!-- EndGoogle Maps -->
 <!-- Footer -->
 	<div class="container-fluid text-center iaxs-footer">
 	  <p>&copy; 2017 PET Física-UFRPE | feito por <a class="iaxs-link"href="https://iuryxavier.github.io">Iury Xavier</a></p>

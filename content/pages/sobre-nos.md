@@ -1,6 +1,8 @@
 Template: page
+Icon: <i class="fa fa-object-group" aria-hidden="true"></i>
 Title: Sobre nós
 Subtitle: Um pouco sobre o que é PET
+Summary: O Programa de Educação Tutorial
 Slug: sobre-nos
 Lang: pt-br
 

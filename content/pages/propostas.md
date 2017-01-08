@@ -1,4 +1,5 @@
 Template: page
+Icon: <i class="fa fa-briefcase" aria-hidden="true"></i>
 Title: Propostas
 Subtitle: Seguimos uma certa regra
 Slug: propostas

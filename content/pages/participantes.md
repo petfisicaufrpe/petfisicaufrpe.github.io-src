@@ -1,4 +1,5 @@
 Template: members
+Icon: <i class="fa fa-users" aria-hidden="true"></i>
 Title: Participantes
 Subtitle: Nossos participantes do curso de licenciatura em Física da UFRPE
 Summary: Saiba mais sobre nossos participantes

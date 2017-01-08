@@ -10,10 +10,10 @@ PATH = 'content'
 ARTICLE_PATHS = ['posts']
 STATIC_PATHS = ['images','posts','pages']
 
-ARTICLE_URL = 'posts/{lang}/{date:%Y}-{date:%b}-{date:%d}-{slug}'
+ARTICLE_URL = 'posts/{lang}/{date:%Y}-{date:%b}-{date:%d}-{slug}.html'
 ARTICLE_SAVE_AS = 'posts/{lang}/{date:%Y}-{date:%b}-{date:%d}-{slug}.html'
 
-PAGE_URL = 'pages/{slug}'
+PAGE_URL = 'pages/{lang}/{slug}.html'
 PAGE_SAVE_AS = 'pages/{lang}/{slug}.html'
 
 THEME = "iaxs"
@@ -43,4 +43,4 @@ SOCIAL = (
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True

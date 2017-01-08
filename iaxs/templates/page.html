@@ -13,9 +13,15 @@
 
 <!-- Header -->
 {% block header %}
-	<h1>Seja bem vindo <small>explore a nossa página</small></h1>
-	<h3>Um pouco <a class="iaxs-link" href="#">sobre nós</a></h3>
-	<p>Saiba mais sobre os nossos projetos</p>	
+	<h1>
+		{{ page.icon }} {{ page.title }}
+	</h1>
+	<h3>
+		{{ page.subtitle }}
+	</h3>
+	<p>
+		{{ page.summary }}
+	</p>	
 {% endblock%}
 <!-- EndHeader -->
 
