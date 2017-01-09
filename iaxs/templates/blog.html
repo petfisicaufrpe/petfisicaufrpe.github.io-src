@@ -13,15 +13,15 @@
 
 <!-- Header -->
 {% block header %}
-	<h1>
-		<i class="fa fa-file-o" aria-hidden="true"></i> {{ page.title }}
+	<h1 class="iaxs-color-base">
+		{{ page.icon }} {{ page.title }}
 	</h1>
-	<h3>
+	<h3 class="iaxs-color-base">
 		{{ page.subtitle }}
 	</h3>
-	<p>
+	<p class="iaxs-color-base">
 		{{ page.summary }}
-	</p>	
+	</p>
 {% endblock%}
 <!-- EndHeader -->
 
@@ -31,14 +31,16 @@
 {% if articles %}
 	{% for article in articles %}
 		<h3>
-			<a class="iaxs-link" href="{{ SITEURL }}{{ article.url }}">
+			<a class="iaxs-link" href="{{ SITEURL }}/{{ article.url }}">
 				{{ article.title }}
 			</a>
 		</h3>
 		<h5>
-			<a class="iaxs-link" href="{{ SITEURL }}{{ article.author.url }}">
+			Publicado por
+			<a class="iaxs-link" href="{{ SITEURL }}/{{ article.author.url }}">
 				{{ article.author }}
 			</a>
+			em {{ article.date|strftime('%d %B %Y') }}
 		</h5>
 	{% endfor %}
 {% endif %}

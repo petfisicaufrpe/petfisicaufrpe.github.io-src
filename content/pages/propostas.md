@@ -2,6 +2,7 @@ Template: page
 Icon: <i class="fa fa-briefcase" aria-hidden="true"></i>
 Title: Propostas
 Subtitle: Seguimos uma certa regra
+Summary: Um pouco da nossa proposta
 Slug: propostas
 Lang: pt-br
 

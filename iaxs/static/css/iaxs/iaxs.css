@@ -1,5 +1,10 @@
-h1 small{
-	color: #A5E4BB;
+
+header * {
+	color: #eceeef;
+}
+
+.iaxs-color-base {
+	color: #eceeef;
 }
 
 .iaxs-bars {
@@ -9,19 +14,35 @@ h1 small{
 .iaxs-header {
 	padding-top: 70px;
 	padding-bottom: 70px;
-	background: #1C0A4E;
-	background: -webkit-linear-gradient(120deg, #A5E4BB, #1C0A4E);
-	background: -o-linear-gradient(120deg, #A5E4BB, #1C0A4E);
-	background: -moz-linear-gradient(120deg, #A5E4BB, #1C0A4E);
-	background: linear-gradient(120deg, #A5E4BB, #1C0A4E);
+	background: #222253;
+	background: -webkit-linear-gradient(120deg, #2155B2, #222253);
+	background: -o-linear-gradient(120deg, #2155B2, #222253);
+	background: -moz-linear-gradient(120deg, #2155B2, #222253);
+	background: linear-gradient(120deg, #2155B2, #222253);
+}
+
+.iaxs-link-header {
+	color: #91908F;
+}
+.iaxs-link-header:hover{
+	text-decoration: none;
+	color: #E0D4C7;
+}
+.iaxs-link-header:active{
+	text-decoration: none;
+	color: #E0D4C7;
 }
 
 .iaxs-link {
-	color: #1C0A4E;
+	color: #3A3837;
 }
 .iaxs-link:hover{
 	text-decoration: none;
-	color: #A5E4BB;
+	color: #91908F;
+}
+.iaxs-link:active{
+	text-decoration: none;
+	color: #91908F;
 }
 
 .iaxs-breadcrumb {
@@ -75,7 +96,7 @@ h1 small{
 }
 
 .iaxs-navbar-nav  li a:hover {
-	color: #A5E4BB !important;
+	color: #2155B2 !important;
 }
 
 .iaxs-footer {

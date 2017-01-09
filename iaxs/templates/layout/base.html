@@ -18,6 +18,9 @@
 <!-- Style [iaxs] Css -->
 	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/iaxs/iaxs.css">
 <!-- EndStyle [iaxs] Css -->
+<!-- Highlight [emacs] Css -->
+	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/highlight/style.css">
+<!-- EndHighlight [emacs] Css -->
 <!-- Favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="{{ SITEURL }}/theme/favicon/favicon.ico">
 	<link rel="icon" href="{{ SITEURL }}/theme/favicon/favicon.ico" type="image/x-icon">
@@ -38,9 +41,9 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right iaxs-navbar-nav">
-					<li><a href="{{ SITEURL }}"><i class="fa fa-home" aria-hidden="true"></i> Início</a></li>
+					<li><a href="{{ SITEURL }}/"><i class="fa fa-home" aria-hidden="true"></i> Início</a></li>
 					{% for page in pages %}
-					<li><a href="{{ SITEURL }}{{ page.url }}">{{ page.icon }} {{ page.title }}</a></li>
+					<li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.icon }} {{ page.title }}</a></li>
 					{% endfor %}
 				</ul>
 			</div>
@@ -49,16 +52,20 @@
 <!-- EndNavbar -->
 <!-- Header <-->
 	<div class="container-fluid iaxs-header text-center">
+		<header>
 		{% block header %}
 		{% endblock %}
+		</header>
 	</div>
 <!-- EndHeader -->
 <!-- Content -->
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<br />
 				{% block content %}
 				{% endblock %}
+				<br />
 			</div>
 		</div>
 	</div>
@@ -67,6 +74,10 @@
 	{% block maps %}
 	{% endblock %}
 <!-- EndGoogle Maps -->
+<!-- Disqus -->
+	{% block disqus %}
+	{% endblock %}
+<!-- EndDisqus -->
 <!-- Footer -->
 	<div class="container-fluid text-center iaxs-footer">
 	  <p>&copy; 2017 PET Física-UFRPE | feito por <a class="iaxs-link"href="https://iuryxavier.github.io">Iury Xavier</a></p>
