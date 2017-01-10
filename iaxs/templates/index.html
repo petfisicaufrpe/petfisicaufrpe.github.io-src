@@ -13,8 +13,8 @@
 
 <!-- Header -->
 {% block header %}
-	<h1 class="iaxs-color-base" >Seja bem vindo <small class="iaxs-color-base">explore a nossa página</small></h1>
-	<h3 class="iaxs-color-base">Um pouco <a class="iaxs-link-header" href="{{ SITEURL }}/pages/pt-br/sobre-nos.html">sobre nós</a></h3>
+	<h1>Seja bem-vindo <small class="iaxs-color-base">explore as nossas páginas</small></h1>
+	<h3>Um pouco <a class="iaxs-link-header" href="{{ SITEURL }}/pages/pt-br/sobre-nos.html">sobre nós</a></h3>
 	<p>Saiba mais sobre os nossos projetos</p>
 {% endblock%}
 <!-- EndHeader -->
@@ -38,31 +38,35 @@
 
 <!-- Add Google Maps -->
 {% block maps %}
-<div id="googleMap" style="height:400px;width:100%;"></div>
+	<div id="googleMap" style="height:400px;width:100%;"></div>
 
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<!-- 
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	-->
 
-<script>
-var myCenter = new google.maps.LatLng(-8.015992, -34.951377);
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZU6pn_EhCF0dZyL86YjhWIVLvkqjlEzw" ></script>
 
-function initialize() {
-var mapProp = {
-  center:myCenter,
-  zoom:17,
-  scrollwheel:false,
-  draggable:false,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
+	<script>
+	var myCenter = new google.maps.LatLng(-8.015992, -34.951377);
 
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	function initialize() {
+	var mapProp = {
+	  center:myCenter,
+	  zoom:17,
+	  scrollwheel:false,
+	  draggable:false,
+	  mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
 
-var marker = new google.maps.Marker({
-  position:myCenter,
-  });
+	var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-marker.setMap(map);
-}
+	var marker = new google.maps.Marker({
+	  position:myCenter,
+	  });
 
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+	marker.setMap(map);
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
 {% endblock %}

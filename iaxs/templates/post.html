@@ -13,15 +13,14 @@
 
 <!-- Header -->
 {% block header %}
-	<h1 class="iaxs-color-base">
-		{{ article.title }}
-	</h1>
-	<h3 class="iaxs-color-base">
-		{{ article.subtitle }}
-	</h3>
-	<p class="iaxs-color-base">
-		{{ article.summary }}
-	</p>	
+	<h1>{{ article.title }}</h1>
+	<h3>{{ article.subtitle }}</h3>
+	<h4>Publicado por 
+		<a class="iaxs-link-header" href="{{ SITEURL }}/{{ article.author.url }}">
+			{{ article.author }}
+		</a> em {{ article.date|strftime('%d %B %Y') }}
+	</h4>
+	{{ article.summary }}	
 {% endblock %}
 <!-- EndHeader -->
 
